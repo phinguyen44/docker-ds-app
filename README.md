@@ -35,7 +35,7 @@ project-name
 
 ### Jupyter
 
-# Edit
+### Edit
 
 When we need to add libraries in `Dockerfile` or `requirements.txt` which are added to working environment in the Docker container, we need to drop the current Docker container and image, and then create them again with the latest setting. 
 
