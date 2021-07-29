@@ -13,8 +13,11 @@ COPY . /app
 # load packages
 RUN pip install -r requirements.txt
 
-# ARG UID
-# RUN useradd docker -l -u $UID -s /bin/bash -m
-# USER docker
+# expose?
+EXPOSE 9999
 
-# ENV PATH=$PATH:/home/docker/.local/bin
+ARG UID
+RUN useradd docker -l -u $UID -s /bin/bash -m
+USER docker
+
+ENV PATH=$PATH:/home/docker/.local/bin
