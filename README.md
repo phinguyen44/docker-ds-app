@@ -29,15 +29,15 @@ project-name
 
 ## Usage
 
-# Build
+### Build
 
-# Run
+### Run
 
-# Jupyter
+### Jupyter
 
 # Edit
 
 When we need to add libraries in `Dockerfile` or `requirements.txt` which are added to working environment in the Docker container, we need to drop the current Docker container and image, and then create them again with the latest setting. 
 
-`make clean-docker` - remove docker container and image
-`make docker-build` - create docker container with latest setting
+- `make clean-docker` - remove docker container and image
+- `make docker-build` - create docker container with latest setting
