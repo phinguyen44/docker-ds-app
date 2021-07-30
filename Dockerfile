@@ -16,8 +16,4 @@ RUN pip install -r requirements.txt
 # expose?
 EXPOSE 9999
 
-ARG UID
-RUN useradd docker -l -u $UID -s /bin/bash -m
-USER docker
-
 ENV PATH=$PATH:/home/docker/.local/bin
